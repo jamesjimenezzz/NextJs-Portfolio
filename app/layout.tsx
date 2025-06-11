@@ -19,10 +19,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html className="scroll-smooth" lang="en">
+    <html className="scroll-smooth " lang="en">
 
       <body
-        className={`antialiased ${poppins.className}`}
+        className={`antialiased ${poppins.className} px-10 `}
       >
         <Header />
         {children}
