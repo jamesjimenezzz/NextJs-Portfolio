@@ -30,7 +30,7 @@ const lowerMarque = [
   return (
    <div className='container mx-auto flex flex-col gap-10 '>
     <div className='flex gap-12 '>
-    <motion.div initial={{x:0}} animate={{x: "-100%"}} transition={{duration: 30, repeat: Infinity, ease: "linear"}} className=' flex gap-12 flex-shrink-0   '>
+    <motion.div initial={{x:0}} animate={{x: "-100%"}} transition={{duration: 30, repeat: Infinity, ease: "linear"}} className=' flex gap-12 flex-shrink-0    '>
     {upperMarque.map((logo, index) => {
         return (
             <div key={index} className='flex items-center cursor-pointer  mx-auto min-w-[120px] gap-2 group hover:scale-105 transition-transform duration-300'>
@@ -42,7 +42,7 @@ const lowerMarque = [
         )
     } )}
     </motion.div>
-    <motion.div initial={{x:0}} animate={{x: "-100%"}} transition={{duration: 30, repeat: Infinity, ease: "linear"}} className=' flex gap-12 flex-shrink-0   '>
+    <motion.div initial={{x:0}} animate={{x: "-100%"}} transition={{duration: 30, repeat: Infinity, ease: "linear"}} className=' flex gap-12 flex-shrink-0    '>
     {upperMarque.map((logo, index) => {
         return (
             <div key={index} className='flex items-center cursor-pointer  mx-auto min-w-[120px] gap-2 group hover:scale-105 transition-transform duration-300'>

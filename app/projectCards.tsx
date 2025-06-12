@@ -1,4 +1,4 @@
-"use client"
+
 
 import React from 'react'
 import { PinContainer, PinPerspective } from '@/components/3d-pin'
@@ -6,14 +6,8 @@ import  capstone  from '@/public/capstone.png'
 import Image from 'next/image'
 import Project from './Project'
 import tasktracker from '@/public/tasktracker.jpg'
-import {
-    motion,
-    MotionValue,
-    useScroll,
-    useSpring,
-    useTransform,
-} from "motion/react"
-import { useRef } from "react"
+import quizlet from '@/public/quizlet.png'
+
 
 const projectCards = () => {
    
@@ -32,7 +26,7 @@ const projects =[
     {
         title: 'Quizlet Clone',
         description: 'The Quizlet Clone is a flashcard-based learning platform that allows users to create, view, and review study sets. ',
-        image: capstone,
+        image: quizlet,
         href: 'https://github.com/jamesjimenezzz',
         tech: ["React", "Tailwind CSS",  "TypeScript", "Supabase"]
     },
