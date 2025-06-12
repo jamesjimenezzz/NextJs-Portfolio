@@ -1,5 +1,4 @@
 import React from 'react'
-import { PinContainer, PinPerspective } from '@/components/3d-pin'
 import ProjectCards from './projectCards'
 
 const Recent = () => {

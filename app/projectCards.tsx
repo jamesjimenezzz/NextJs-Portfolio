@@ -1,11 +1,8 @@
 
 
 import React from 'react'
-import { PinContainer, PinPerspective } from '@/components/3d-pin'
 import  capstone  from '@/public/capstone.png'
-import Image from 'next/image'
 import Project from './Project'
-import tasktracker from '@/public/tasktracker.jpg'
 import quizlet from '@/public/quizlet.png'
 
 

@@ -1,6 +1,4 @@
-import { PinContainer } from '@/components/3d-pin';
 import Image from 'next/image'
-import capstone from '@/public/capstone.png'
 import { StaticImageData } from 'next/image'
 import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
 
