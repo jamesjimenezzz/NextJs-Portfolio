@@ -2,6 +2,8 @@
 	Installed from https://reactbits.dev/ts/tailwind/
 */
 
+"use client"
+
 import React, { useRef, useEffect } from "react";
 
 type CanvasStrokeStyle = string | CanvasGradient | CanvasPattern;

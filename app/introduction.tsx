@@ -9,9 +9,9 @@ const introduction = () => {
   return (
     <div className='text-center flex flex-col  h-screen  justify-center '>
        <div className='hover:scale-105 transition-transform duration-300 cursor-pointer'>
-        <h1 className=' hover:bg-black transition-all duration-500 bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary/40 text-[5rem] font-bold '>James Jimenez</h1>
+        <h1 className=' hover:bg-black transition-all duration-500 bg-clip-text text-transparent  bg-gradient-to-r from-primary to-primary/40 md:text-[5rem] sm:text-[4.2rem]  text-[3.7rem] leading-15 sm:leading-none  font-bold '>James Jimenez</h1>
        </div>
-       <div className='flex gap-2 text-2xl mb-5 text-center font-semibold justify-center text-muted-foreground'>
+       <div className='flex gap-2 sm:text-xl text-md md:text-2xl mb-5 text-center font-semibold justify-center text-muted-foreground'>
         <p>17</p>
         <p>•</p>
         <p>Full Stack Developer</p>
@@ -19,17 +19,18 @@ const introduction = () => {
         <p>Philippines</p>
        </div>
        <div className='mb-5 max-w-2xl'>
-        <p className='text-xl '>
+        <p className='md:text-lg lg:text-xl text-md '>
         Crafting digital experiences with cutting-edge technologies. Passionate about creating scalable solutions that make a difference.
         </p>
        </div>
-       <div className='flex gap-2 justify-center'>
+       <div className='flex gap-2 flex-col sm:flex-row items-center mx-auto w-1/2  justify-center'>
        
-        <Button className=' hover:scale-105 transition-transform duration-300 bg-primary w-1/4 py-5  flex  items-center justify-center text-center text-primary-foreground font-bold shadow-xs hover:bg-primary/90 '>
+        <Button className=' hover:scale-105 transition-transform duration-300 bg-primary text-xs py-3 sm:py-5 flex-1/4  items-center justify-center text-center text-primary-foreground font-bold shadow-xs hover:bg-primary/90 '>
             <Mail className='mr-2' />
-            Get in touch
+            <p className=' sm:block'>Get in touch</p>
         </Button>
-        <Button variant={'outline'} className=' hover:scale-105 transition-transform duration-300 font-semibold px-9 border-slate-700 w-1/4 py-5 flex items-center justify-center text-center'>
+        <Button variant={'outline'} className=' hover:scale-105 transition-transform duration-300 font-semibold px-9 border-slate-700  py-3 sm:py-5 flex-1/12
+         items-center justify-center text-center'>
             <Github className='mr-2' />
             Github
         </Button>

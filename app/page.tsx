@@ -1,4 +1,4 @@
-'use client'
+
 import React from 'react'
 import Introduction from './introduction'
 import TechStack from './tech-stack'

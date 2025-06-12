@@ -30,21 +30,19 @@ const projects =[
         href: 'https://github.com/jamesjimenezzz',
         tech: ["React", "Tailwind CSS",  "TypeScript", "Supabase"]
     },
-    {
-        title: 'TaskTracker',
-        description: 'TaskTracker is a productivity tool that helps users manage daily tasks efficiently by setting due dates, editing tasks, and tracking progress. ',
-        image: tasktracker,
-        href: 'https://github.com/jamesjimenezzz',
-        tech: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"]
-    }
+   
     
-]
+]                                                                                               
 
 
   return (
-    <div className='grid grid-cols-2 gap-60 mt-30 '>
-        {projects.map((project) => {
-            return <Project key={project.title} project={project} />
+    <div className='grid xl:grid-cols-2 lg:gap-5 lg:grid-cols-1  gap-10 mt-10'>
+        {projects.map((project, index) => {
+            return (
+                <div key={index} className={`${index === 1 ? 'xl:mt-20 ' : ''}`}>
+                    <Project project={project} />
+                </div>
+            )
         })}
 
        
