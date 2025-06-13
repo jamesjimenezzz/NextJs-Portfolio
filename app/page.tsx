@@ -3,6 +3,7 @@ import Introduction from './introduction'
 import TechStack from './tech-stack'
 import Recent from './recent'
 import Squares from '@/components/blocks/Backgrounds/Squares/Squares'
+import Footer from './Footer'
 
 const HomePage = () => {
   return (
@@ -30,6 +31,8 @@ const HomePage = () => {
     <section id="projects">
       <Recent />
     </section>
+
+    <Footer />
   </div>
   )
 }

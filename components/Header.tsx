@@ -63,7 +63,7 @@ if(isOpen) {
         
            {navs.map((nav, index) => (
             <li key={index} className='hover:scale-105 dark:hover:text-white  hover:text-slate-600 '  >
-              <Link to={nav.href} smooth={true}  spy spyThrottle={100}  duration={500} offset={-200} className=' cursor-pointer transition-all duration-300' activeClass='text-black dark:text-white'>
+              <Link to={nav.href} smooth={true}  spy spyThrottle={100}  duration={500} offset={-500} className=' cursor-pointer transition-all duration-300' activeClass='text-black dark:text-white'>
               {nav.name}
               </Link>
             </li>

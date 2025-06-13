@@ -15,8 +15,7 @@ const introduction = () => {
         <p>17</p>
         <p>•</p>
         <p>Full Stack Developer</p>
-        <p>•</p>
-        <p>Philippines</p>
+       
        </div>
        <div className='mb-5 max-w-2xl'>
         <p className='md:text-lg lg:text-xl text-md '>
@@ -32,7 +31,7 @@ const introduction = () => {
         <Button variant={'outline'} className=' hover:scale-105 transition-transform duration-300 font-semibold px-9 border-slate-700  py-3 sm:py-5 flex-1/12
          items-center justify-center text-center'>
             <Github className='mr-2' />
-            Github
+           <a href='https://github.com/jamesjimenezzz' target='_blank' className='cursor-pointer text-xs sm:text-base'>Github</a>
         </Button>
        </div>
         </div>

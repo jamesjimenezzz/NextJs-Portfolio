@@ -14,7 +14,8 @@ interface ProjectProps {
 const Project = ({project}: {project: ProjectProps}) => {
   return (
    <>
-   <CardContainer className="inter-var cursor-pointer">
+   <a href={project.href} target='_blank'>
+   <CardContainer  className="inter-var cursor-pointer">
       <CardBody className="bg-gray-100 relative group/card hover:shadow-xl hover:shadow-black dark:hover:shadow-2xl dark:hover:shadow-white/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
         <CardItem
           translateZ="50"
@@ -41,19 +42,18 @@ const Project = ({project}: {project: ProjectProps}) => {
         <div className="flex justify-between items-center mt-10">
           <CardItem
             translateZ={20}
-            as="a"
-            href="https://twitter.com/mannupaaji"
-            target="__blank"
+           
             className="px-4 py-2 flex flex-wrap gap-2 rounded-xl text-sm font-normal dark:text-white"
           >
             {project.tech.map((tech) => (
-              <p key={tech} className=' text-stone-600 px-2 py-1 rounded-md bg-stone-200'>{tech}</p>
+              <p key={tech} className=' dark:bg-stone-900 dark:text-gray-400 text-stone-600 px-2 py-1 rounded-md bg-stone-200'>{tech}</p>
             ))}
           </CardItem>
         
         </div>
       </CardBody>
     </CardContainer>
+   </a>
    </>
   ) 
 }
