@@ -16,12 +16,12 @@ export function ThemeProvider({
   return (
     <NextThemesProvider
       attribute="class"
-      defaultTheme="light"
+      defaultTheme="dark"
       enableSystem={false}
       storageKey="theme"
       themes={["light", "dark"]}
       disableTransitionOnChange
-      forcedTheme={!mounted ? "light" : undefined}
+      forcedTheme={!mounted ? "dark" : undefined}
       {...props}
     >
       {children}

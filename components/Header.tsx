@@ -62,9 +62,9 @@ if(isOpen) {
         <ul className='hidden sm:flex gap-10 font-[500] text-gray-400 dark:text-stone-400  '>
         
            {navs.map((nav, index) => (
-            <li key={index} className='hover:scale-105 dark:hover:text-white  hover:text-slate-600 '  >
-              <Link to={nav.href} smooth={true}  spy spyThrottle={100}  duration={500} offset={-150} className=' cursor-pointer transition-all duration-300' activeClass='text-black dark:text-white'>
-              {nav.name}
+            <li key={index} className='hover:scale-105 dark:hover:text-white    hover:text-slate-600 '  >
+              <Link to={nav.href} smooth={true}  spy spyThrottle={100}  duration={500} offset={-150} className=' cursor-pointer transition-all duration-300' activeClass='text-black dark:text-white bg-transparent text-shadow-sm   underline-offset-4  underline text-shadow-black/20 dark:text-shadow-white/70 dark:text-shadow-md  '>
+              {nav.name}  
               </Link>
             </li>
          

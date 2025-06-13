@@ -43,7 +43,7 @@ const Project = ({project}: {project: ProjectProps}) => {
           <CardItem
             translateZ={20}
            
-            className="px-4 py-2 flex flex-wrap gap-2 rounded-xl text-sm font-normal dark:text-white"
+            className="px-4 py-2 justify-center flex flex-wrap gap-2 rounded-xl text-sm font-normal dark:text-white"
           >
             {project.tech.map((tech) => (
               <p key={tech} className=' dark:bg-stone-900 dark:text-gray-400 text-stone-600 px-2 py-1 rounded-md bg-stone-200'>{tech}</p>

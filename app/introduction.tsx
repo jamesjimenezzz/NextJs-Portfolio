@@ -28,7 +28,7 @@ const introduction = () => {
             <Mail className='mr-2' />
             <p className=' sm:block'>Get in touch</p>
         </Button>
-        <Button variant={'outline'} className=' hover:scale-105 transition-transform duration-300 font-semibold px-9 border-slate-700  py-3 sm:py-5 flex-1/12
+        <Button variant={'outline'} className=' cursor-pointer hover:scale-105 transition-transform duration-300 font-semibold px-9 border-slate-700  py-3 sm:py-5 flex-1/12
          items-center justify-center text-center'>
             <Github className='mr-2' />
            <a href='https://github.com/jamesjimenezzz' target='_blank' className='cursor-pointer text-xs sm:text-base'>Github</a>

@@ -27,20 +27,20 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{
             __html: `
               try {
-                localStorage.setItem('theme', 'light');
-                document.documentElement.classList.remove('dark');
-                document.documentElement.classList.add('light');
+                localStorage.setItem('theme', 'dark');
+                document.documentElement.classList.remove('light');
+                document.documentElement.classList.add('dark');
               } catch (e) {}
             `,
           }}
         />
       </head>
       <body
-        className={`antialiased ${poppins.className} px-10 `}
+        className={`antialiased ${poppins.className} sm:px-10 px-5 `}
       >
         <ThemeProvider
           attribute="class"
-          defaultTheme="light"
+          defaultTheme="dark"
           enableSystem={false}
           storageKey="theme"
           themes={["light", "dark"]}
