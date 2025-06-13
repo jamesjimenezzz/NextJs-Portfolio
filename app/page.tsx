@@ -33,7 +33,7 @@ const HomePage = () => {
       <TechStack />
     </section>
 
-    <section id="projects">
+    <section className='' id="projects">
       <Recent />
     </section>
 
