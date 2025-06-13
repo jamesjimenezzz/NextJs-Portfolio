@@ -3,30 +3,46 @@
 import { motion } from 'framer-motion'
 import React from 'react'
 import Image from 'next/image'
+import tanstack from "@/public/tanstack.png"
+import framer from "@/public/framer.png"
+import javascript from "@/public/javascript.png"
+import react from "@/public/react.png"
+import nextjs from "@/public/nextjs.png"
+import tailwind from "@/public/tailwindcss.png"
+import typescript from "@/public/typescript.png"
+import zustand from "@/public/zustand.png"
+import nodejs from "@/public/nodejs.png"
+import git from "@/public/git.png"
+import express from "@/public/express.png"
+import supabase from "@/public/supabase.png"
+import postgresql from "@/public/postgres.png"
+import php from "@/public/phplogo.svg"
+import postman from "@/public/postman.png"
+import github from "@/public/github.png"
 
 const Marquee = () => {
 
 const upperMarque = [
-    { name: "Javascript", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
-    { name: "React", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
-    { name: "Next.js", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" },
-    { name: "Tailwind CSS", logo: "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg" },
-    { name: "TypeScript", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" },
-    { name: "Tanstack Query", logo: "https://images.seeklogo.com/logo-png/43/2/react-query-logo-png_seeklogo-435661.png" },
-    { name: "Zustand", logo: "https://user-images.githubusercontent.com/958486/218346783-72be5ae3-b953-4dd7-b239-788a882fdad6.svg" },
-    {name: "Framer Motion", logo: "https://images.seeklogo.com/logo-png/44/1/framer-motion-logo-png_seeklogo-446185.png" }
+    { name: "Javascript", logo: javascript },
+    { name: "React", logo: react },
+    { name: "Next.js", logo: nextjs },
+    { name: "Tailwind CSS", logo: tailwind },
+    { name: "TypeScript", logo: typescript },
+    { name: "Tanstack Query", logo: tanstack },
+    { name: "Zustand", logo: zustand },
+    {name: "Framer Motion", logo: framer }
     
 ]
 
 const lowerMarque = [
-    { name: "Node.js", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" },
-    { name: "Express", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" },
-    { name: "Supabase", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/supabase/supabase-original.svg" },
-    { name: "PostgreSQL", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" },
-    { name: "Git", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" },
-    { name: "Github", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" },
-    {name: "PHP", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" },
-    {name: "Postman", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg" },
+    { name: "Node.js", logo: nodejs },
+    { name: "Express", logo: express },
+    { name: "Supabase", logo: supabase },
+    { name: "PostgreSQL", logo: postgresql },
+    { name: "Git", logo: git },
+    { name: "Github", logo: github },
+    {name: "PHP", logo: php },
+    {name: "Postman", logo: postman },
 ]
   return (
    <div className='container mx-auto flex flex-col gap-10 '>
@@ -35,9 +51,15 @@ const lowerMarque = [
     {upperMarque.map((logo, index) => {
         return (
             <div key={index} className='flex items-center cursor-pointer  mx-auto min-w-[120px] gap-2 group hover:scale-105 transition-transform duration-300'>
-                <img src={logo.logo} alt ={logo.name} className='w-12  h-10 object-contain grayscale opacity-70 group-hover:opacity-100 transition-all duration-300' />
-                <span className='text-base font-[500] dark:text-gray-300 text-gray-600 group-hover:text-primary transition-all duration-300 dark:group-hover:text-primary'>
-                    {logo.name}
+                <Image
+                    src={logo.logo}
+                    alt={logo.name}
+                    width={48}
+                    height={40}
+                    className={`sm:w-12 sm:h-10 w-10 h-8  object-contain grayscale opacity-70 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300 ${index === 2 ? "dark:invert" : ""}`}
+                />
+                <span className='sm:text-base text-sm font-[500] dark:text-gray-300 text-gray-600 group-hover:text-primary transition-all duration-300 dark:group-hover:text-primary'>
+                    {logo.name} 
                 </span>
             </div>
         )
@@ -47,9 +69,15 @@ const lowerMarque = [
     {upperMarque.map((logo, index) => {
         return (
             <div key={index} className='flex items-center cursor-pointer  mx-auto min-w-[120px] gap-2 group hover:scale-105 transition-transform duration-300'>
-                <img src={logo.logo} alt ={logo.name} className='w-12  h-10 object-contain grayscale opacity-70 group-hover:opacity-100 transition-all duration-300' />
-                <span className='text-base font-[500] dark:text-gray-300 text-gray-600 group-hover:text-primary transition-all duration-300 dark:group-hover:text-primary'>
-                    {logo.name}
+                <Image
+                    src={logo.logo}
+                    alt={logo.name}
+                    width={48}
+                    height={40}
+                    className={`sm:w-12 sm:h-10 w-10 h-8  object-contain grayscale opacity-70 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300 ${index === 2 ? "dark:invert" : ""}`}
+                />
+                <span className='sm:text-base text-sm font-[500] dark:text-gray-300 text-gray-600 group-hover:text-primary transition-all duration-300 dark:group-hover:text-primary'>
+                    {logo.name} 
                 </span>
             </div>
         )
@@ -62,8 +90,14 @@ const lowerMarque = [
     {lowerMarque.map((logo, index) => {
         return (
             <div key={index} className='flex items-center mx-auto min-w-[120px] gap-2 group cursor-pointer hover:scale-105 transition-transform duration-300'>
-                <img src={logo.logo} alt ={logo.name} className='w-12  h-10 object-contain grayscale opacity-70 group-hover:opacity-100 transition-all duration-300' />
-                <span className='text-base font-[500] dark:text-gray-300 text-gray-600 group-hover:text-primary transition-all duration-300 dark:group-hover:text-primary'>
+                <Image
+                    src={logo.logo}
+                    alt={logo.name}
+                    width={48}
+                    height={40}
+                    className={`sm:w-12 sm:h-10 w-10 h-8 object-contain grayscale opacity-70 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300 ${index===5 ? "dark:invert-50" : ""}`}
+                />
+                <span className={`sm:text-base text-sm font-[500] dark:text-gray-300 text-gray-600 group-hover:text-primary transition-all duration-300 dark:group-hover:text-primary `}>
                     {logo.name}
                 </span>
             </div>
@@ -74,9 +108,15 @@ const lowerMarque = [
     {lowerMarque.map((logo, index) => {
         return (
             <div key={index} className='flex items-center mx-auto min-w-[120px] gap-2 group cursor-pointer hover:scale-105 transition-transform duration-300'>
-                <img src={logo.logo} alt ={logo.name} className='w-12  h-10 object-contain grayscale opacity-70 group-hover:opacity-100 transition-all duration-300 dark:opacity-100' />
-                <span className='text-base font-[500] dark:text-gray-300 text-gray-600 group-hover:text-primary transition-all duration-300 dark:group-hover:text-primary'>
-                    {logo.name}
+                <Image
+                    src={logo.logo}
+                    alt={logo.name}
+                    width={48}
+                    height={40}
+                    className={`sm:w-12 sm:h-10 w-10 h-8 object-contain grayscale opacity-70 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300 dark:opacity-100 ${index===5 ? "dark:invert-50" : ""}`}
+                />
+                <span className={`sm:text-base text-sm font-[500] dark:text-gray-300 text-gray-600 group-hover:text-primary transition-all duration-300 dark:group-hover:text-primary `}>
+                    {logo.name} 
                 </span>
             </div>
         )

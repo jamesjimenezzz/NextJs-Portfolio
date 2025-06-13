@@ -23,7 +23,7 @@ const HomePage = () => {
       <Introduction />
     </section>
 
-    <section className='container ' id="about">
+    <section className='container ' id="tech">
       <TechStack />
     </section>
 
