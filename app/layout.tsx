@@ -3,6 +3,7 @@ import "./globals.css";
 import { Poppins } from "next/font/google";
 import Header from "@/components/Header";
 import { ThemeProvider } from "@/components/theme-provider"
+import BackHome from "@/components/BackHome";
 
 export const metadata: Metadata = {
   title: "James Jimenez",
@@ -46,7 +47,7 @@ export default function RootLayout({
           themes={["light", "dark"]}
           disableTransitionOnChange
         >
-          <Header />
+          <BackHome />
           {children}
         </ThemeProvider>
       </body>

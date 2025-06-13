@@ -4,10 +4,13 @@ import TechStack from './tech-stack'
 import Recent from './recent'
 import Squares from '@/components/blocks/Backgrounds/Squares/Squares'
 import Footer from './Footer'
+import Header from '@/components/Header'
 
 const HomePage = () => {
   return (
     
+    <>
+    <Header />
     <div className="flex flex-col container overflow-hidden max-w-[1400px] mx-auto justify-center items-center">
     {/* background */}
     <div className="fixed inset-0 -z-10">
@@ -18,6 +21,8 @@ const HomePage = () => {
         speed={0.3}
       />
     </div>
+
+    
 
     {/* ===== sections with IDs ===== */}
     <section id="home">
@@ -34,7 +39,9 @@ const HomePage = () => {
 
     <Footer />
   </div>
+  </>
   )
+  
 }
 
 export default HomePage
