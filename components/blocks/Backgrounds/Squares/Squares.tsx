@@ -5,6 +5,7 @@
 "use client"
 
 import React, { useRef, useEffect } from "react";
+import { useTheme } from "next-themes";
 
 type CanvasStrokeStyle = string | CanvasGradient | CanvasPattern;
 
@@ -28,12 +29,22 @@ const Squares: React.FC<SquaresProps> = ({
   squareSize = 40,
   hoverFillColor = "#222",
 }) => {
+  const { theme } = useTheme();
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const requestRef = useRef<number | null>(null);
   const numSquaresX = useRef<number>(0);
   const numSquaresY = useRef<number>(0);
   const gridOffset = useRef<GridOffset>({ x: 0, y: 0 });
   const hoveredSquareRef = useRef<GridOffset | null>(null);
+
+  // Get the appropriate border color based on theme
+  const getBorderColor = () => {
+    if (typeof borderColor === 'string' && borderColor.includes('dark:')) {
+      const [lightColor, darkColor] = borderColor.split(' dark:');
+      return theme === 'dark' ? darkColor : lightColor;
+    }
+    return borderColor;
+  };
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -73,7 +84,7 @@ const Squares: React.FC<SquaresProps> = ({
             ctx.fillRect(squareX, squareY, squareSize, squareSize);
           }
 
-          ctx.strokeStyle = borderColor;
+          ctx.strokeStyle = getBorderColor();
           ctx.strokeRect(squareX, squareY, squareSize, squareSize);
         }
       }
@@ -164,7 +175,7 @@ const Squares: React.FC<SquaresProps> = ({
       canvas.removeEventListener("mousemove", handleMouseMove);
       canvas.removeEventListener("mouseleave", handleMouseLeave);
     };
-  }, [direction, speed, borderColor, hoverFillColor, squareSize]);
+  }, [direction, speed, borderColor, hoverFillColor, squareSize, theme]);
 
   return (
     <canvas

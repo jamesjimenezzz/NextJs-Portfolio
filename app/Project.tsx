@@ -15,12 +15,12 @@ const Project = ({project}: {project: ProjectProps}) => {
   return (
    <>
    <CardContainer className="inter-var cursor-pointer">
-      <CardBody className="bg-gray-100 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
+      <CardBody className="bg-gray-100 relative group/card hover:shadow-xl hover:shadow-black dark:hover:shadow-2xl dark:hover:shadow-white/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
         <CardItem
           translateZ="50"
           className="text-center w-full"
         >
-         <p className='text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-t  from-black to-white dark:text-white'> {project.title}</p>
+         <p className=' dark:text-transparent  dark:from-white dark:to-white/10 text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-t  from-black to-white '> {project.title}</p>
         </CardItem>
         <CardItem
           as="p"

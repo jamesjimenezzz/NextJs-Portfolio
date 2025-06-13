@@ -117,6 +117,9 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground transition-colors duration-800;
+  }
+  :root {
+    @apply transition-colors duration-800;
   }
 }

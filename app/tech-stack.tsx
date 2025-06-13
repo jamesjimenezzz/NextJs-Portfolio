@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 const TechStack = () => {
   return (
-    <div className='mx-auto flex flex-col gap-5 mb-50 container '>
+    <div className='mx-auto flex flex-col gap-5 mb-50 '>
       <div className='flex justify-between px-5 items-center '>
       <h1 className='text-4xl font-bold '>Tech Stack</h1>
      <Link href='/tech-stack'>

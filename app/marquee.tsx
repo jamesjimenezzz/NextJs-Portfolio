@@ -35,8 +35,8 @@ const lowerMarque = [
     {upperMarque.map((logo, index) => {
         return (
             <div key={index} className='flex items-center cursor-pointer  mx-auto min-w-[120px] gap-2 group hover:scale-105 transition-transform duration-300'>
-                <Image src={logo.logo} alt ={logo.name} className='w-12  h-10 object-contain grayscale opacity-70 group-hover:opacity-100 transition-all duration-300' />
-                <span className='text-base font-[500] text-gray-600 group-hover:text-primary transition-all duration-300'>
+                <img src={logo.logo} alt ={logo.name} className='w-12  h-10 object-contain grayscale opacity-70 group-hover:opacity-100 transition-all duration-300' />
+                <span className='text-base font-[500] dark:text-gray-300 text-gray-600 group-hover:text-primary transition-all duration-300 dark:group-hover:text-primary'>
                     {logo.name}
                 </span>
             </div>
@@ -47,8 +47,8 @@ const lowerMarque = [
     {upperMarque.map((logo, index) => {
         return (
             <div key={index} className='flex items-center cursor-pointer  mx-auto min-w-[120px] gap-2 group hover:scale-105 transition-transform duration-300'>
-                <Image src={logo.logo} alt ={logo.name} className='w-12  h-10 object-contain grayscale opacity-70 group-hover:opacity-100 transition-all duration-300' />
-                <span className='text-base font-[500] text-gray-600 group-hover:text-primary transition-all duration-300'>
+                <img src={logo.logo} alt ={logo.name} className='w-12  h-10 object-contain grayscale opacity-70 group-hover:opacity-100 transition-all duration-300' />
+                <span className='text-base font-[500] dark:text-gray-300 text-gray-600 group-hover:text-primary transition-all duration-300 dark:group-hover:text-primary'>
                     {logo.name}
                 </span>
             </div>
@@ -62,8 +62,8 @@ const lowerMarque = [
     {lowerMarque.map((logo, index) => {
         return (
             <div key={index} className='flex items-center mx-auto min-w-[120px] gap-2 group cursor-pointer hover:scale-105 transition-transform duration-300'>
-                <Image src={logo.logo} alt ={logo.name} className='w-12  h-10 object-contain grayscale opacity-70 group-hover:opacity-100 transition-all duration-300' />
-                <span className='text-base font-[500] text-gray-600 group-hover:text-primary transition-all duration-300'>
+                <img src={logo.logo} alt ={logo.name} className='w-12  h-10 object-contain grayscale opacity-70 group-hover:opacity-100 transition-all duration-300' />
+                <span className='text-base font-[500] dark:text-gray-300 text-gray-600 group-hover:text-primary transition-all duration-300 dark:group-hover:text-primary'>
                     {logo.name}
                 </span>
             </div>
@@ -74,8 +74,8 @@ const lowerMarque = [
     {lowerMarque.map((logo, index) => {
         return (
             <div key={index} className='flex items-center mx-auto min-w-[120px] gap-2 group cursor-pointer hover:scale-105 transition-transform duration-300'>
-                <Image src={logo.logo} alt ={logo.name} className='w-12  h-10 object-contain grayscale opacity-70 group-hover:opacity-100 transition-all duration-300' />
-                <span className='text-base font-[500] text-gray-600 group-hover:text-primary transition-all duration-300'>
+                <img src={logo.logo} alt ={logo.name} className='w-12  h-10 object-contain grayscale opacity-70 group-hover:opacity-100 transition-all duration-300 dark:opacity-100' />
+                <span className='text-base font-[500] dark:text-gray-300 text-gray-600 group-hover:text-primary transition-all duration-300 dark:group-hover:text-primary'>
                     {logo.name}
                 </span>
             </div>

@@ -9,7 +9,7 @@ const introduction = () => {
   return (
     <div className='text-center flex flex-col  h-screen  justify-center '>
        <div className='hover:scale-105 transition-transform duration-300 cursor-pointer'>
-        <h1 className=' hover:bg-black transition-all duration-500 bg-clip-text text-transparent  bg-gradient-to-r from-primary to-primary/40 md:text-[5rem] sm:text-[4.2rem]  text-[3.7rem] leading-15 sm:leading-none  font-bold '>James Jimenez</h1>
+        <h1 className=' hover:bg-black dark:hover:bg-white transition-all duration-500 bg-clip-text text-transparent  bg-gradient-to-r from-primary to-primary/40 md:text-[5rem] sm:text-[4.2rem]  text-[3.7rem] leading-15 sm:leading-none  font-bold '>James Jimenez</h1>
        </div>
        <div className='flex gap-2 sm:text-xl text-md md:text-2xl mb-5 text-center font-semibold justify-center text-muted-foreground'>
         <p>17</p>
