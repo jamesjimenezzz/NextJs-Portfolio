@@ -43,14 +43,14 @@ const Chatbox = () => {
   return (
     <>
       {isOpen && (
-        <div className="fixed bottom-25 rounded-lg right-7 w-96 h-[600px] bg-gray-100 shadow-2xl outline outline-gray-300 dark:bg-stone-900 dark:outline-stone-700">
+        <div className="fixed    items-center bottom-25 z-999 rounded-lg  right-1 sm:right-7 sm:w-96 w-80 sm:h-[600px] h-[500px] bg-gray-100 shadow-2xl outline outline-gray-300 dark:bg-stone-900 dark:outline-stone-700">
           <div className="flex flex-col justify-between h-full">
             <header className="m-3.5 border-b flex justify-between items-center border-gray-300 pb-4">
               <div className="flex items-center  gap-2">
                 <Image
                   src={chatbot}
                   alt="picture"
-                  className="rounded-full w-14 h-14   object-cover"
+                  className="rounded-full w-12 h-12   object-cover"
                 />
                 <div className="flex flex-col justify-between h-full">
                   <h1 className="font-bold ">Chat With James</h1>
@@ -69,7 +69,7 @@ const Chatbox = () => {
                   className="cursor-pointer"
                   onClick={() => setIsOpen(false)}
                 >
-                  <X className="size-4" />
+                  <X className="sm:size-4 size-3" />
                 </Button>
               </div>
             </header>
@@ -166,13 +166,13 @@ const Chatbox = () => {
         </div>
       )}
 
-      <div className="fixed bottom-5 right-7">
+      <div className="fixed bottom-5 sm:right-7 right-5">
         <Button
           onClick={() => setIsOpen(!isOpen)}
-          className="flex py-6.5 px-6 rounded-full cursor-pointer  items-center"
+          className="flex sm:py-6.5 sm:px-6 rounded-full cursor-pointer  py-6 items-center"
         >
-          <MessageCircleMore className="size-5" />
-          <span className="text-sm font-lg">Chat With James</span>
+          <MessageCircleMore className="sm:size-5 size-4" />
+          <span className="sm:text-base text-xs  ">Chat With James</span>
         </Button>
       </div>
     </>
