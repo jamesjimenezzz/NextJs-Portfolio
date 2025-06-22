@@ -2,7 +2,7 @@
 	Installed from https://reactbits.dev/ts/tailwind/
 */
 
-"use client"
+"use client";
 
 import React, { useRef, useEffect } from "react";
 import { useTheme } from "next-themes";
@@ -39,9 +39,9 @@ const Squares: React.FC<SquaresProps> = ({
 
   // Get the appropriate border color based on theme
   const getBorderColor = () => {
-    if (typeof borderColor === 'string' && borderColor.includes('dark:')) {
-      const [lightColor, darkColor] = borderColor.split(' dark:');
-      return theme === 'dark' ? darkColor : lightColor;
+    if (typeof borderColor === "string" && borderColor.includes("dark:")) {
+      const [lightColor, darkColor] = borderColor.split(" dark:");
+      return theme === "dark" ? darkColor : lightColor;
     }
     return borderColor;
   };
@@ -95,10 +95,8 @@ const Squares: React.FC<SquaresProps> = ({
         0,
         canvas.width / 2,
         canvas.height / 2,
-        Math.sqrt(canvas.width ** 2 + canvas.height ** 2) / 2,
+        Math.sqrt(canvas.width ** 2 + canvas.height ** 2) / 2
       );
-     
-
 
       ctx.fillStyle = gradient;
       ctx.fillRect(0, 0, canvas.width, canvas.height);
@@ -146,10 +144,10 @@ const Squares: React.FC<SquaresProps> = ({
       const startY = Math.floor(gridOffset.current.y / squareSize) * squareSize;
 
       const hoveredSquareX = Math.floor(
-        (mouseX + gridOffset.current.x - startX) / squareSize,
+        (mouseX + gridOffset.current.x - startX) / squareSize
       );
       const hoveredSquareY = Math.floor(
-        (mouseY + gridOffset.current.y - startY) / squareSize,
+        (mouseY + gridOffset.current.y - startY) / squareSize
       );
 
       if (
@@ -175,7 +173,15 @@ const Squares: React.FC<SquaresProps> = ({
       canvas.removeEventListener("mousemove", handleMouseMove);
       canvas.removeEventListener("mouseleave", handleMouseLeave);
     };
-  }, [direction, speed, borderColor, hoverFillColor, squareSize, theme]);
+  }, [
+    direction,
+    speed,
+    borderColor,
+    hoverFillColor,
+    squareSize,
+    theme,
+    getBorderColor,
+  ]);
 
   return (
     <canvas
