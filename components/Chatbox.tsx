@@ -43,7 +43,7 @@ const Chatbox = () => {
   return (
     <>
       {isOpen && (
-        <div className="fixed    items-center bottom-25 z-999 rounded-lg  right-1 sm:right-7 sm:w-96 w-80 sm:h-[600px] h-[500px] bg-gray-100 shadow-2xl outline outline-gray-300 dark:bg-stone-900 dark:outline-stone-700">
+        <div className="fixed    items-center bottom-25 z-999 rounded-lg  right-1 sm:right-7 sm:w-96 w-80 sm:h-[600px] h-[500px]  bg-gray-100 shadow-2xl outline outline-gray-300 dark:bg-stone-900 dark:outline-stone-700">
           <div className="flex flex-col justify-between h-full">
             <header className="m-3.5 border-b flex justify-between items-center border-gray-300 pb-4">
               <div className="flex items-center  gap-2">
@@ -53,7 +53,7 @@ const Chatbox = () => {
                   className="rounded-full w-12 h-12   object-cover"
                 />
                 <div className="flex flex-col justify-between h-full">
-                  <h1 className="font-bold ">Chat With James</h1>
+                  <h1 className="font-bold  ">Chat With James</h1>
                   <div className="flex items-center  text-sm gap-3">
                     <p>
                       <span className="text-green-600">•</span> Online
@@ -169,10 +169,12 @@ const Chatbox = () => {
       <div className="fixed bottom-5 sm:right-7 right-5">
         <Button
           onClick={() => setIsOpen(!isOpen)}
-          className="flex sm:py-6.5 sm:px-6 rounded-full cursor-pointer  py-6 items-center"
+          className="flex sm:py-5 sm:px-6 rounded-full cursor-pointer transition-all duration-400 py-6 items-center"
         >
-          <MessageCircleMore className="sm:size-5 size-4" />
-          <span className="sm:text-base text-xs  ">Chat With James</span>
+          <MessageCircleMore className="sm:size-5 size-4 text-gray-100 dark:text-stone-800" />
+          <span className="sm:text-xs text-xs text-gray-100 dark:text-stone-800 ">
+            Chat With James
+          </span>
         </Button>
       </div>
     </>

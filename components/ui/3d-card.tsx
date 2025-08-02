@@ -137,7 +137,6 @@ export const CardItem = ({
     rotateX,
     rotateY,
     rotateZ,
-    handleAnimations,
   ]);
 
   return (
