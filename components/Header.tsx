@@ -26,6 +26,7 @@ const Header = () => {
     { name: "Tech", href: "tech" },
     { name: "Projects", href: "projects" },
     { name: "About", href: "about" },
+  
   ];
 
   if (isOpen) {
